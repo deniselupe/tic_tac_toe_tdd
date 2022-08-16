@@ -59,7 +59,7 @@ describe Game do
         allow(player1).to receive(:update_piece)
         allow(player2).to receive(:update_piece)
       end
-      
+
       it 'sends #update_piece to each player' do
         both_players = game2.player_list
         expect(both_players).to all(receive(:update_piece))

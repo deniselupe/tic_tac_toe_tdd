@@ -12,4 +12,8 @@ class Player
   def update_name(new_name)
     @name = new_name.to_s
   end
+
+  def update_piece(game_piece)
+  	@game_piece = game_piece
+  end
 end
